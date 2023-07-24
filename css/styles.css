@@ -1,0 +1,135 @@
+
+.body-home {
+    background-color: lightgrey;
+}
+header h1{
+    background-color: #cfc96a;
+    color: black;
+    opacity: 0.7;
+    font-size: 3em;
+    padding: 5px;
+    text-align: center;
+}
+header {
+    grid-area: header;
+    background-image: url(../images/banner1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+nav {
+    grid-area: nav;
+    background-color: #feda41;
+
+}
+main-1 {
+    grid-area: main1;
+    background-color: #feda41;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+main-2 {
+    grid-area: main2;
+    background-color: #feda41;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+footer {
+    grid-area: footer;
+    color: black;
+    background-color: #feda41;
+    text-align: center;
+    padding: 5px;
+}
+footer h1{
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+}
+footer a{
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    border-top: 1px solid black;
+}
+nav li {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+table, th, td {
+    border:1px solid white;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+
+#template-home {  
+    font-family: Verdana, Arial, sans-serif;
+    width: 100%;
+    margin: auto;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .55fr 0.1fr .5fr .5fr 0.2fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main1"
+    "main2"
+    "footer";
+}
+
+
+
+
+
+@media (min-width: 600px) {
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    list-style-type: none;
+    border-top: none;
+    
+}
+nav li {
+    border-bottom: none;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    text-align: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+#template-home {  
+    font-family: Verdana, Arial, sans-serif;
+    width: 100%;
+    margin: auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 0.3fr 3fr 0.5fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "main1 main2"
+    "footer footer";
+}
+}
