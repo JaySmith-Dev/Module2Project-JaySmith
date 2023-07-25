@@ -1,4 +1,6 @@
 
+
+
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
@@ -20,14 +22,6 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-// Add a "checked" symbol when clicking on a list item
-// var list = document.querySelector('myUL');
-// list.addEventListener('click', function(ev) {
-//   if (ev.target.tagName === 'li') {
-//     ev.target.classList.toggle('checked');
-//   }
-// }, false);
-
 // Create a new list item when clicking on the "Add" button
 function newElement() {
   var li = document.createElement("li");
@@ -35,7 +29,7 @@ function newElement() {
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
-    alert("You must write something!");
+    alert("You must enter something to add!");
   } else {
     document.getElementById("myUL").appendChild(li);
   }
@@ -54,3 +48,41 @@ function newElement() {
     }
   }
 }
+
+
+
+
+
+
+
+
+(function(){
+  const buttons = document.querySelectorAll('.counterBtn')
+  let count = 0
+
+  buttons.forEach( function(button){
+    button.addEventListener('click', function(){
+      if(button.classList.contains('prevBtn')){
+        count--
+      }
+      else if(button.classList.contains('nextBtn')){
+        count++
+      }
+
+      const counter = document.querySelector('#counter')
+      counter.textContent = count
+
+      if(count < 0){
+        counter.style.color = 'red'
+      }
+      else if(count > 0){
+        counter.style.color = 'lightgreen'
+      }
+      else{
+        counter.style.color = 'white'
+      }
+      /*body*/
+    })
+    //statements
+  })
+}) ()

@@ -4,7 +4,7 @@
 	<title>To Do, Or Not To Do! - Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="Javascript/javascript.js"></script>
+    <!-- <script src="Javascript/javascript.js"></script> -->
 </head>
 <body class="body-home">
 		<div id="template-home">
@@ -21,25 +21,24 @@
               <main-1>
                 <br>
                 <a id="todo"><img src="images/ToDo.png" width="100%" alt="To do"></a>
-                <!-- <p>Add to-do list here</p><br> -->
                 <div id="myDIV" class="header">
-                  <!-- <h2>My To Do List</h2> -->
                   <input type="text" id="myInput" placeholder="Enter to-do item...">
                   <span onclick="newElement()" class="addBtn">Add</span>
                 </div>
                 <ul id="myUL">
-                  <!-- <li>Hit the gym</li>
-                  <li class="checked">Pay bills</li>
-                  <li>Meet George</li>
-                  <li>Buy eggs</li>
-                  <li>Read a book</li>
-                  <li>Organize office</li> -->
                 </ul>
               </main-1>
               <main-2>
                 <br>
                 <a id="nottodo"><img src="images/NotToDo.png" width="100%" alt="Not to do"></a>
-                <p>This will contain fun stuff</p><br>
+                <div class="card">
+                  <h2 class="name">Click + or - to change the counter!</h2>
+                  <div class="container">
+                    <button class="counterBtn nextBtn">+</button>
+                    <h4 id="counter">0</h4>
+                    <button class="counterBtn prevBtn">-</button>
+                  </div>
+                </div>
               </main-2>
               <footer>
                 <h1>To Do Or Not To Do!</h1><br>
@@ -53,6 +52,11 @@
                 <!-- <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Uniconlabs - Flaticon</a> -->
                 <p>Developed by Jay Smith 2023</p>
               </footer>
+              
 		</div>
+    <script src="Javascript/javascript.js"></script>
 </body>
 </html>
+
+<!-- https://www.w3schools.com/howto/howto_js_todolist.asp -->
+<!-- https://www.youtube.com/watch?v=IPHOFK1rUA0&list=PL9bD98LkBR7P16BndaNtP4x6Wf5Ib85Hm&index=10 -->

@@ -69,6 +69,10 @@ nav a{
     font-size: 1.5em;
 }
 
+nav li:hover {
+  background-color: #cfc96a;
+}
+
 #template-home {  
     font-family: Verdana, Arial, sans-serif;
     width: 100%;
@@ -88,21 +92,18 @@ nav a{
 }
 
 
-
-/* Include the padding and border in an element's total width and height */
-* {
+/* Style elements relating to main-1, i.e. the to-do list */
+main-1 * {
     box-sizing: border-box;
   }
-  
-  /* Remove margins and padding from the list */
-  ul {
+
+  main-1 ul {
     margin: 0;
     padding: 0;
     list-style-type:none
   }
   
-  /* Style the list items */
-  ul li {
+  main-1 ul li {
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
@@ -110,45 +111,20 @@ nav a{
     font-size: 18px;
     transition: 0.2s;
   
-    /* make the list items unselectable */
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
   }
   
-  /* Set all odd list items to a different color (zebra-stripes) */
-  ul li:nth-child(odd) {
+  main-1 ul li:nth-child(odd) {
     background: #cfc96a;
   }
   
-  /* Darker background-color on hover */
-  ul li:hover {
+  main-1 ul li:hover {
     background: #ddd;
   }
   
-  /* When clicked on, add a background color and strike out text */
-  /* ul li.checked {
-    background: #888;
-    color: #fff;
-    text-decoration: line-through;
-  } */
-  
-  /* Add a "checked" mark when clicked on */
-  /* ul li#checked::before {
-    content: '';
-    position: absolute;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
-  } */
-  
-  /* Style the close button */
   .close {
     position: absolute;
     right: 0;
@@ -161,7 +137,6 @@ nav a{
     color: white;
   }
   
-  /* Style the header */
   .header {
     background-color: #f44336;
     padding: 30px 40px;
@@ -169,14 +144,12 @@ nav a{
     text-align: center;
   }
   
-  /* Clear floats after the header */
   .header:after {
     content: "";
     display: table;
     clear: both;
   }
   
-  /* Style the input */
   input {
     margin: 0;
     border: none;
@@ -187,7 +160,6 @@ nav a{
     font-size: 16px;
   }
   
-  /* Style the "Add" button */
   .addBtn {
     padding: 10px;
     width: 25%;
@@ -202,14 +174,48 @@ nav a{
   }
   
   .addBtn:hover {
-    background-color: #bbb;
+    background-color: palegreen;
   }
 
 
 
+/* Style elements relating to main-2, i.e. the counter */
+main-2 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+main-2 div{
+  display: grid;
+  /* min-height: 100%; */
+  place-items: center;
+}
 
+.card {
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
 
+.name{
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+#counter{
+  font-size: 50px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.prevBtn, .nextBtn{
+  font-size: 1.3rem;
+  outline: none;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+}
 
 
 
