@@ -4,6 +4,7 @@
 	<title>To Do, Or Not To Do! - Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="javascript/javascript.js"></script>
 </head>
 <body class="body-home">
 		<div id="template-home">
@@ -20,7 +21,20 @@
               <main-1>
                 <br>
                 <a id="todo"><img src="images/ToDo.png" width="100%" alt="To do"></a>
-                <p>Add to-do list here</p><br>
+                <!-- <p>Add to-do list here</p><br> -->
+                <div id="myDIV" class="header">
+                  <!-- <h2>My To Do List</h2> -->
+                  <input type="text" id="myInput" placeholder="Enter to-do item...">
+                  <span onclick="newElement()" class="addBtn">Add</span>
+                </div>
+                <ul id="myUL">
+                  <!-- <li>Hit the gym</li>
+                  <li class="checked">Pay bills</li>
+                  <li>Meet George</li>
+                  <li>Buy eggs</li>
+                  <li>Read a book</li>
+                  <li>Organize office</li> -->
+                </ul>
               </main-1>
               <main-2>
                 <br>
