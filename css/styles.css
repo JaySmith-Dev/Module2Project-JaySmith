@@ -1,4 +1,4 @@
-
+/* Mobile first styling */
 .body-home {
     background-color: lightgrey;
 }
@@ -223,7 +223,7 @@ main-2 div{
 
 
 
-
+/* Desktop styling */
 @media (min-width: 600px) {
 nav ul {
     display: flex;

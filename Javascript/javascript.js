@@ -1,7 +1,6 @@
+// Javascript for the to-do list
 
-
-
-// Create a "close" button and append it to each list item
+// Create close button and pop it on the end of each item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -12,7 +11,7 @@ for (i = 0; i < myNodelist.length; i++) {
   myNodelist[i].appendChild(span);
 }
 
-// Click on a close button to hide the current list item
+// Click the close button to hide the current list item
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -54,7 +53,7 @@ function newElement() {
 
 
 
-
+// Javascript for the counter
 
 (function(){
   const buttons = document.querySelectorAll('.counterBtn')
@@ -81,8 +80,6 @@ function newElement() {
       else{
         counter.style.color = 'white'
       }
-      /*body*/
     })
-    //statements
   })
 }) ()
